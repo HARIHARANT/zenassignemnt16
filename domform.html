@@ -7,9 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
-
+    
 </head>
-
 <body>
     <div class="flex-container">
         <form action="">
@@ -28,9 +27,7 @@
             <div class="flex-container">
                 <div class="col-md-6">
                     <label for="">Address:</label>
-                    <textarea class="form-input" name="address" placeholder="Please enter" id="address">
-
-                    </textarea >
+                    <input type="text" class="form-input" name="address" placeholder="Please enter" id="address">
                     <p class="error" id="address_error"></p>
                 </div>
                 <div class="col-md-6">
@@ -54,25 +51,20 @@
                     <label for="">Choice of food:</label>
                     <div class="flex-container" style="justify-content: start;">
                         <div class="checkbox-items">
-                            <label for=""><input type="checkbox" class="form-input form-checkbox" name="briyani"
-                                    value="briyani" id="briyani"> Briyani</label>
+                            <label for=""><input type="checkbox" class="form-input form-checkbox" name="briyani" value="briyani" id="briyani"> Briyani</label>
                         </div>
                         <div class="checkbox-items">
-                            <label for=""><input type="checkbox" class="form-input form-checkbox" name="vegmeals"
-                                    value="vegmeals" id="vegmeals"> VegMeals</label>
+                            <label for=""><input type="checkbox" class="form-input form-checkbox" name="vegmeals" value="vegmeals" id="vegmeals"> VegMeals</label>
                         </div>
                         <div class="checkbox-items">
-                            <label for=""><input type="checkbox" class="form-input form-checkbox" name="nonvegmeals"
-                                    value="nonvegmeals" id="nonvegmeals"> NonMeals</label>
+                            <label for=""><input type="checkbox" class="form-input form-checkbox" name="nonvegmeals" value="nonvegmeals" id="nonvegmeals"> NonMeals</label>
                         </div>
                         <div class="checkbox-items">
-                            <label for=""><input type="checkbox" class="form-input form-checkbox" name="noodels"
-                                    value="noodels" id="noodels"> Noodels</label>
+                            <label for=""><input type="checkbox" class="form-input form-checkbox" name="noodels" value="noodels" id="noodels"> Noodels</label>
                         </div>
                         <div class="checkbox-items">
-                            <label for=""><input type="checkbox" class="form-input form-checkbox" name="burger"
-                                    value="burger" id="burger"> Burger</label>
-                        </div>
+                            <label for=""><input type="checkbox" class="form-input form-checkbox" name="burger" value="burger" id="burger"> Burger</label>
+                        </div>                    
                     </div>
                     <p class="error" id="food_error"></p>
                 </div>
@@ -101,16 +93,16 @@
             </div>
             <div class="flex-container">
                 <div class="col-md-12">
-                    <button type="button" class="submit" id="submit">Submit</button>
-                </div>
+                    <button type="button" class="submit" id="submitbtn">Submit</button>
+                </div>            
             </div>
-        </form>
+        </form>    
     </div>
     <br>
-    <div class="flex-container">
+    <div class="flex-container" >
         <table id="table_id" class="table">
             <thead>
-                <tr>
+                <tr>          
                     <th>FirsttName</th>
                     <th>LastName</th>
                     <th>Address</th>
@@ -123,14 +115,13 @@
             </thead>
             <tbody id="tb_body">
                 <tr id="nodata" class="dispnone">
-                    <td colspan="8">
-                        <p>No Data Found</p>
-                    </td>
-                </tr>
-            </tbody>
+                    <td colspan="8"><p>No Data Found</p></td>
+                </tr>            
+            </tbody>          
         </table>
     </div>
     <script src="./script.js"></script>
     <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+
 </body>
 </html>
